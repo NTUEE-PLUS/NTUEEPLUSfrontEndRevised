@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './component/NavBar'
+import Navbar from './container/NavBar'
 
 //import routes
 import InRoutes from './routes/inRoutes'
