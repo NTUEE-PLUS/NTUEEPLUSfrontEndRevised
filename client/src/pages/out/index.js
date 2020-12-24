@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './component/NavBar'
 
 //import routes
-import OutRoutes from './routes/OutRoutes'
+import OutRoutes from './routes/outRoutes'
 
 const OutApp = () => {
     return (
