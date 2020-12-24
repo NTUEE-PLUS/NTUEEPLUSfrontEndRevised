@@ -7,7 +7,7 @@ yarn run dev
 ```
 :warning: **Do not mix with npm!!**
 
-# NTUEE+ FrontEnd (12/ Update)
+# NTUEE+ FrontEnd (12/24 Update)
 <small>[回MD首頁](https://hackmd.io/CSNbja7XTYCYquYxgq4Xow)</small>
 ### 前端重構Branch: frontEndRevised
 ### 架構討論
