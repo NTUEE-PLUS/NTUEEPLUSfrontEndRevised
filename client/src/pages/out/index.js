@@ -1,12 +1,16 @@
 import React from 'react'
 import Navbar from './component/NavBar'
 
-const FrontApp = () => {
+//import routes
+import OutRoutes from './routes/OutRoutes'
+
+const OutApp = () => {
     return (
         <>
             <Navbar />
+            <OutRoutes />
         </>
     )
 }
 
-export default FrontApp
+export default OutApp

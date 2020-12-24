@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import FrontApp from './out'
+// import router
+import App from './routes/Routes'
 
-ReactDOM.render(<FrontApp />, document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'))
