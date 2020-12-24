@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: path.resolve(__dirname, 'src', 'index.js'),
+    entry: path.resolve(__dirname, 'src/pages/', 'index.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
@@ -18,7 +18,7 @@ module.exports = {
     //=============== html template plugin (currently not use) ==========
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src/index.html'),
+            template: path.resolve(__dirname, 'src/pages/index.html'),
         }),
     ],
     //===================================================================
@@ -26,7 +26,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(jsx|js)$/,
-                include: path.resolve(__dirname, 'src'),
+                include: path.resolve(__dirname, 'src/pages/'),
                 exclude: /node_modules/,
                 use: [
                     {
