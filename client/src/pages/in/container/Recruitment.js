@@ -146,14 +146,14 @@ const Recruitment = (props) => {
         template4,
         template5,
     ])
-    useEffect(() => {
-        async function getData() {
-            const result = await axios.post('/api/showRecruitment')
-            console.log(result)
-            setTemplates(result.data)
-        }
-        getData()
-    }, [])
+    // useEffect(() => {
+    //     async function getData() {
+    //         const result = await axios.post('/api/showRecruitment')
+    //         console.log(result)
+    //         setTemplates(result.data)
+    //     }
+    //     getData()
+    // }, [])
     return (
         <div className='Recruitment container-fluid '>
             <Scrollbar renderThumbVertical={renderThumb}>
