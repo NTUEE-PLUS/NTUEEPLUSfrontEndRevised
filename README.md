@@ -9,7 +9,10 @@ yarn run dev
 
 # NTUEE+ FrontEnd (12/24 Update)
 <small>[回MD首頁](https://hackmd.io/CSNbja7XTYCYquYxgq4Xow)</small>
-### 前端重構Branch: frontEndRevised
+### 工作分配
+* featherchen:Career
+* ChiangHaoWei: Out class=>hook
+* martinooh: CSS
 ### 架構討論
 ```
 ├── client/
