@@ -1,6 +1,8 @@
+//TODO
+// scrollor
 import React from 'react'
 // import './Recruitment_block.css';
-import Scrollbar from 'react-scrollbars-custom'
+import Scrollbar from 'react-custom-scrollbars'
 
 const renderThumb = ({ style, ...props }) => {
     const thumbStyle = {
@@ -35,7 +37,7 @@ const RecruitmentBlock = (props) => {
                     style={{ borderRadius: '10px' }}
                 ></img>
             </div>
-            <div class='card-header Recruitment_block_subtitle'>
+            <div className='card-header Recruitment_block_subtitle'>
                 {recruit_title.company_name}
             </div>
             <div className='card-body' id='Recruitment_block_text_lg'>
@@ -49,7 +51,8 @@ const RecruitmentBlock = (props) => {
                 </p>
             </div>
             <div className='card-body' id='Recruitment_block_text_sm'>
-                <Scrollbar renderThumbVertical={renderThumb}>
+                {/* <Scrollbar renderThumbVertical={renderThumb}> */}
+                <div>
                     <p className='card-title Recruitment_block_title'>
                         {recruit_title.title}
                     </p>
@@ -63,7 +66,7 @@ const RecruitmentBlock = (props) => {
                             id={id + '_spec'}
                         />
                     </p>
-                </Scrollbar>
+                </div>
             </div>
         </div>
     )

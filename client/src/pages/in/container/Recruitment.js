@@ -1,12 +1,12 @@
 import React, { Component, useState, useEffect } from 'react'
 // import './recruitment.css'
-import RecruitmentBlock from '../component/recruitmentBlock'
+import RecruitmentBlock from '../component/RecruitmentBlock'
 // import eesa_icon from '../../images/eesa-icon.png';
 // import kronos from '../../images/kronos.png'
 // import McKinsey from '../../images/McKinsey.png'
 // import Riedel from '../../images/Riedel.png'
 import { Link } from 'react-router-dom'
-import Scrollbar from 'react-scrollbars-custom'
+import Scrollbar from 'react-custom-scrollbars'
 import axios from 'axios'
 
 const template1 = {
@@ -155,35 +155,60 @@ const Recruitment = (props) => {
     //     getData()
     // }, [])
     return (
-        <div className='Recruitment container-fluid '>
-            <Scrollbar renderThumbVertical={renderThumb}>
-                <div className='d-xl-flex justify-content-xl-around'>
-                    <div className='Recruitment_container col'>
-                        <div className='Recruitment_wrapper'>
-                            <Link className='Recruitment_block'>
-                                <RecruitmentBlock data={templates[0]} />
-                            </Link>
-                            <Link className='Recruitment_block'>
-                                <RecruitmentBlock data={templates[2]} />
-                            </Link>
-                            <Link className='Recruitment_block'>
-                                <RecruitmentBlock data={templates[4]} />
-                            </Link>
+        <>
+            {/* //TODO */}
+            {/* //Scrollbars */}
+
+            <div className='Recruitment container-fluid '>
+                {/* <p>test</p> */}
+                {/* <Scrollbar renderThumbVertical={renderThumb}> */}
+                <div>
+                    <p>test</p>
+                    <div className='d-xl-flex justify-content-xl-around'>
+                        <div className='Recruitment_container col'>
+                            <div className='Recruitment_wrapper'>
+                                <Link
+                                    to='/template0'
+                                    className='Recruitment_block'
+                                >
+                                    <RecruitmentBlock data={templates[0]} />
+                                </Link>
+                                <Link
+                                    to='/template2'
+                                    className='Recruitment_block'
+                                >
+                                    <RecruitmentBlock data={templates[2]} />
+                                </Link>
+                                <Link
+                                    to='/template4'
+                                    className='Recruitment_block'
+                                >
+                                    <RecruitmentBlock data={templates[4]} />
+                                </Link>
+                            </div>
+                        </div>
+                        <div className='Recruitment_container col'>
+                            <div className='Recruitment_wrapper'>
+                                <Link
+                                    to='/template1'
+                                    className='Recruitment_block'
+                                >
+                                    <RecruitmentBlock data={templates[1]} />
+                                </Link>
+                                <Link
+                                    to='/template3'
+                                    className='Recruitment_block'
+                                >
+                                    <RecruitmentBlock data={templates[3]} />
+                                </Link>
+                            </div>
                         </div>
                     </div>
-                    <div className='Recruitment_container col'>
-                        <div className='Recruitment_wrapper'>
-                            <Link className='Recruitment_block'>
-                                <RecruitmentBlock data={templates[1]} />
-                            </Link>
-                            <Link className='Recruitment_block'>
-                                <RecruitmentBlock data={templates[3]} />
-                            </Link>
-                        </div>
-                    </div>
+                    {/* </Scrollbar> */}
                 </div>
-            </Scrollbar>
-        </div>
+            </div>
+            <p>test</p>
+        </>
     )
 }
 export default Recruitment
