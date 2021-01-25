@@ -6,7 +6,6 @@ const InRoutes = () => {
         <>
             {
                 /* routes display in "in" */
-
                 <Route path='/in/career' component={CareerRoutes} />
             }
         </>

@@ -5,7 +5,7 @@ import Recruitment from '../Recruitment'
 
 const CareerRoutes = () => {
     return (
-        <Switch>
+        <>
             {/* <Route
                 path='/in/career/Recommendation'
                 exact
@@ -16,7 +16,7 @@ const CareerRoutes = () => {
                 exact
                 component={Recruitment}
             />
-        </Switch>
+        </>
     )
 }
 
