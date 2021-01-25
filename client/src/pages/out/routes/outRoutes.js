@@ -30,6 +30,7 @@ const OutRoutes = () => {
             <Route path='/Register' component={RegisterRoutes}></Route>
             <Route path='/Forget' component={Forget}></Route>
             <Route path='/ResetPassword' component={ResetPassword}></Route>
+
         </>
     )
 }

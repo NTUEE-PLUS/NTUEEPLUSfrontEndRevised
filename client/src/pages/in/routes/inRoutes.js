@@ -1,12 +1,16 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import CareerRoutes from '../container/routes/careerRoutes'
+import Career from '../container/Career'
 const InRoutes = () => {
     return (
         <>
             {
-                /* routes display in "in" */
-                <Route path='/in/career' component={CareerRoutes} />
+                <>
+                    {/* /* routes display in "in" */}
+                    <Route path='/in/career' exact component={Career}></Route>
+                    <CareerRoutes></CareerRoutes>
+                </>
             }
         </>
     )
