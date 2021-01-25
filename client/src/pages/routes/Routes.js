@@ -14,9 +14,10 @@ const App = () => {
             <BrowserRouter>
                 <Switch>
                     {/* <Route exact path='/' component={<div>XD</div>}></Route> */}
-                    <Route path='/' component={OutApp}></Route>
+
                     <Route path='/in' component={InApp}></Route>
                     <Route path='/auth' component={AuthApp}></Route>
+                    <Route path='/' component={OutApp}></Route>
                 </Switch>
             </BrowserRouter>
             <Footer />
