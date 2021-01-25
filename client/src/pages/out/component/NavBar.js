@@ -2,8 +2,8 @@ import React from 'react'
 // import AppBar from '@material-ui/core/AppBar';
 // import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button'
-// import Logo from './Logo'
-// import './AppBar.css'
+import Logo from './Logo'
+import '../css/NavBar.css'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
@@ -12,7 +12,9 @@ const NavBar = () => {
     return (
         //=========================Bootstrap React =============================
         <Navbar bg='light' expand='lg'>
-            <Navbar.Brand href='/'>{/* <Logo /> */}</Navbar.Brand>
+            <Navbar.Brand href='/'>
+                <Logo />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
             <Navbar.Collapse id='basic-navbar-nav'>
                 <Nav>
@@ -46,7 +48,7 @@ const NavBar = () => {
                     </Button>
                     <Nav.Link href='/Contact'>
                         <Button id='AppBar_menuButton' className='noHoverBg'>
-                            Contact<span className='sr-only'>(current)</span>
+                            Contact
                         </Button>
                     </Nav.Link>
                     <Nav.Link href='/Support'>
