@@ -8,7 +8,7 @@ const InRoutes = () => {
             {
                 <>
                     {/* /* routes display in "in" */}
-                    <Route path='/in/career' exact component={Career}></Route>
+                    <Route path='/in/career' component={Career}></Route>
                     <CareerRoutes></CareerRoutes>
                 </>
             }

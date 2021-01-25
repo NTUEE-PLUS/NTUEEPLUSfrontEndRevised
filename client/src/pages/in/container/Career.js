@@ -8,6 +8,7 @@ class Career extends Component {
     render() {
         return (
             <div className='align-items-center d-flex career_link_imgs'>
+                {/* <p>test</p> */}
                 <div className='row container mx-auto '>
                     <div className='col d-flex justify-content-center'>
                         <Link to='/in/career/Recruitment'>

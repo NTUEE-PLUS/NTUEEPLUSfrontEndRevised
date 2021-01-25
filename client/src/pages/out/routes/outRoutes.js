@@ -21,16 +21,19 @@ const OutRoutes = () => {
             {/* routes display in out */}
 
             {/* <Route exact path='/' component={<div>Test</div>}></Route> */}
-            <Route path='/About' component={About}></Route>
-            <Route path='/Contact' component={Contact}></Route>
-            <Route path='/Support' component={Support}></Route>
-            <Route path='/History' component={History}></Route>
-            <Route path='/Team' component={Team}></Route>
-            <Route path='/Login' component={Login}></Route>
+            <Route exact path='/About' component={About}></Route>
+            <Route exact path='/Contact' component={Contact}></Route>
+            <Route exact path='/Support' component={Support}></Route>
+            <Route exact path='/History' component={History}></Route>
+            <Route exact path='/Team' component={Team}></Route>
+            <Route exact path='/Login' component={Login}></Route>
             <Route path='/Register' component={RegisterRoutes}></Route>
-            <Route path='/Forget' component={Forget}></Route>
-            <Route path='/ResetPassword' component={ResetPassword}></Route>
-
+            <Route exact path='/Forget' component={Forget}></Route>
+            <Route
+                exact
+                path='/ResetPassword'
+                component={ResetPassword}
+            ></Route>
         </>
     )
 }

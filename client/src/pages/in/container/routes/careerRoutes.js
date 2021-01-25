@@ -6,11 +6,16 @@ const CareerRoutes = () => {
     return (
         <>
             <Route
+                exact
                 path='/in/career/recommendation'
                 component={Recommendation}
             />
 
-            <Route path='/in/career/recruitment' component={Recruitment} />
+            <Route
+                exact
+                path='/in/career/recruitment'
+                component={Recruitment}
+            />
         </>
     )
 }
