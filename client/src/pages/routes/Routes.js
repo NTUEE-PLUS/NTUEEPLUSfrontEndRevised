@@ -6,16 +6,21 @@ import OutApp from '../out/index' // from out
 import InApp from '../in/index' // from in
 import AuthApp from '../auth/index' // from auth
 
+import Footer from '../out/component/Footer'
+
 const App = () => {
     return (
-        <BrowserRouter>
-            <Switch>
-                {/* <Route exact path='/' component={<div>XD</div>}></Route> */}
-                <Route path='/in' component={InApp}></Route>
-                <Route path='/out' component={OutApp}></Route>
-                <Route path='/auth' component={AuthApp}></Route>
-            </Switch>
-        </BrowserRouter>
+        <>
+            <BrowserRouter>
+                <Switch>
+                    {/* <Route exact path='/' component={<div>XD</div>}></Route> */}
+                    <Route path='/' component={OutApp}></Route>
+                    <Route path='/in' component={InApp}></Route>
+                    <Route path='/auth' component={AuthApp}></Route>
+                </Switch>
+            </BrowserRouter>
+            <Footer />
+        </>
     )
 }
 
