@@ -5,7 +5,8 @@ const OutRoutes = () => {
     return (
         <>
             {/* routes display in out */}
-            <Route path='/out/test' exact component={<div>Test</div>}></Route>
+
+            <Route path='/out/test' component={<div>Test</div>}></Route>
         </>
     )
 }
