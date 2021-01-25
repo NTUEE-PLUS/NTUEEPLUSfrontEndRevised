@@ -4,4 +4,7 @@ import ReactDOM from 'react-dom'
 // import router
 import App from './routes/Routes'
 
+//import bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 ReactDOM.render(<App />, document.getElementById('app'))

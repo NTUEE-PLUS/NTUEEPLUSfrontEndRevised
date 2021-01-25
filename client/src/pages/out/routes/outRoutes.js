@@ -5,6 +5,7 @@ const OutRoutes = () => {
     return (
         <>
             {/* routes display in out */}
+
             <Route path='/out/test' component={<div>Test</div>}></Route>
         </>
     )
