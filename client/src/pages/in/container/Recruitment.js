@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from 'react'
-// import './recruitment.css'
+import '../css/Recruitment.css'
 import RecruitmentBlock from '../component/RecruitmentBlock'
 // import eesa_icon from '../../images/eesa-icon.png';
 // import kronos from '../../images/kronos.png'

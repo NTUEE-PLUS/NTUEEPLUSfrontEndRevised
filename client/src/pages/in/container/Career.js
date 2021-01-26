@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import '../css/career.css'
+import '../css/Career.css'
 import Recruitment_image from '../images/Recruitment.png'
 import Recommendation_image from '../images/Recommendation.png'
 

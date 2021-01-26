@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../css/recommendation.css'
+import '../css/Recommendation.css'
 // import { NavBar_in } from '../../component/AppBar_in'
 import RecommendationBlock from '../component/RecommendationBlock'
 import eesa_icon from '../images/eesa-icon.png'
