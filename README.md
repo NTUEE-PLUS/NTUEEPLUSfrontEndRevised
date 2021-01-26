@@ -10,9 +10,13 @@ yarn run dev
 # NTUEE+ FrontEnd (12/24 Update)
 <small>[回MD首頁](https://hackmd.io/CSNbja7XTYCYquYxgq4Xow)</small>
 ### 工作分配
-* featherchen:Career
-* ChiangHaoWei: Out class=>hook
+* noidname01: Profile
+* featherchen:Login, Register
+* ChiangHaoWei: Policy, History, Team
 * martinooh: CSS
+* Jamesyu220: Images, Columns
+* GinGerBread_Yellow: Search, Auth
+* Jim-CTChen: Recruitment
 ### 架構討論
 ```
 ├── client/
