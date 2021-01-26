@@ -197,6 +197,7 @@ const Header = ({ onClick }) => {
         <div id='hr0' className='ml-1 mt-2 d-flex justify-content-between'>
             <p className='Profile_main_title'>Profile Setting</p>
             <button className='btn Profile_edit_btn pl-0' onClick={onClick}>
+                {/* TODO */}
                 <img src={data.edit} className='img-fluid Profile_edit_icon' />
                 <p className='d-none d-sm-inline'>Edit</p>
             </button>
@@ -416,4 +417,75 @@ const OccupationTable = ({
 }
 /* ===================== Occupation Table ==================== */
 
+/* ===================== Social Media ==================== */
+
+const SocialMedia = ({
+    facebook,
+    facebook_checkbox,
+    personal_website,
+    personal_website_checkbox,
+    Linkedin,
+    Linkedin_checkbox,
+    handleInputChange,
+    handleCheckChange,
+    expandElement,
+}) => {
+    const expand = (e) => {
+        e.preventDefault()
+        expandElement(
+            'Profile_expand_social_media',
+            'hr2',
+            'Profile_expand_icon_2',
+            '2rem',
+            '1rem'
+        )
+    }
+    return (
+        <div id='Profile_social_media'>
+            <ExpandRow
+                labelClass='col-form-label col-4 Profile_info_label'
+                inputClass='form-control col-6 ml-auto Profile_info_input'
+                labelText='Facebook:'
+                value={{ data: facebook, show: facebook_checkbox }}
+                inputChange={handleInputChange}
+                checkChange={handleCheckChange}
+                name='facebook'
+                expand={expand}
+                imgID='Profile_expand_icon_2'
+            />
+            <div id='Profile_expand_social_media'>
+                <InputRow
+                    labelText='Blog:'
+                    value={{
+                        data: personal_website,
+                        show: personal_website_checkbox,
+                    }}
+                    inputChange={handleInputChange}
+                    checkChange={handleCheckChange}
+                    name='personal_website'
+                />
+                <InputRow
+                    labelText='Linkedin:'
+                    value={{ data: Linkedin, show: Linkedin_checkbox }}
+                    inputChange={handleInputChange}
+                    checkChange={handleCheckChange}
+                    name='Linkedin'
+                />
+            </div>
+        </div>
+    )
+}
+
+/* ===================== Social Media ==================== */
+
 /* ====================== Profile Components ====================== */
+
+export {
+    OccupationTable,
+    Header,
+    HeadShot,
+    Info,
+    Contact,
+    SocialMedia,
+    Diploma,
+}
