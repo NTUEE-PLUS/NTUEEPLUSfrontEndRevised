@@ -1,10 +1,10 @@
 import React from 'react'
-import Nav from '../../component/NavBar'
+import NavBar from '../../component/NavBar'
 import { OUT_CONFIG } from "../../config/NavBarConfig"
 
-const NavBar = () => {
+const Nav = () => {
     return (
-        <Nav 
+        <NavBar 
             hasNavDropdown={OUT_CONFIG.hasNavDropdown}
             navDropdown={OUT_CONFIG.navDropdown}
             navButton={OUT_CONFIG.navButton}
@@ -12,4 +12,4 @@ const NavBar = () => {
         />
     )
 }
-export default NavBar
+export default Nav
