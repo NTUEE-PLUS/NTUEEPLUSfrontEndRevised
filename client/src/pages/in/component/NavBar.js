@@ -1,19 +1,13 @@
 import React from 'react'
 import NavBar from '../../component/NavBar'
-
-const navButton = [
-    { href: '/in/Career', buttonText: 'Career' },
-    { href: '/in/Study', buttonText: 'Study' },
-    { href: '/in/Column', buttonText: 'Column' },
-    { href: '/in/Search', buttonText: 'Search' },
-]
+import { IN_CONFIG } from "../../config/NavBarConfig"
 
 const Nav = () => {
     return (
         <NavBar 
-            hasNavDropdown={false}
-            navButton={navButton}
-            navBrand='/in'
+            hasNavDropdown={IN_CONFIG.hasNavDropdown}
+            navButton={IN_CONFIG.navButton}
+            navBrand={IN_CONFIG.navBrand}
         />
     )
 }
