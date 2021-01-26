@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../../component/NavBar'
 import { IN_CONFIG } from "../../config/NavBarConfig"
 
+
 const Nav = () => {
     return (
         <NavBar 

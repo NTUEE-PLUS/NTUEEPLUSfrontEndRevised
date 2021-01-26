@@ -3,7 +3,7 @@ import '../css/Contact.css'
 import { Link } from 'react-router-dom'
 // import image_data from '../images/public_images.json'
 
-function Contact() {
+const Contact = () => {
     return (
         <div id='Contact_container'>
             <div
