@@ -1,5 +1,4 @@
-//TODO
-// scrollor
+//TODO:scrollor
 import React from 'react'
 // import './Recruitment_block.css';
 import Scrollbar from 'react-custom-scrollbars'
