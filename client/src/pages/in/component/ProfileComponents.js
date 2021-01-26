@@ -123,28 +123,28 @@ const Diploma = ({
                 imgID='Profile_expand_icon_3'
             />
             <div id='Profile_expand_diploma'>
-                <DiplomaElement
+                <InputRow
                     labelText='Double:'
                     value={{ data: double_major, show: double_major_checkbox }}
                     inputChange={handleInputChange}
                     checkChange={handleCheckChange}
                     name='double_major'
                 />
-                <DiplomaElement
+                <InputRow
                     labelText='Minor:'
                     value={{ data: minor, show: minor_checkbox }}
                     inputChange={handleInputChange}
                     checkChange={handleCheckChange}
                     name='minor'
                 />
-                <DiplomaElement
+                <InputRow
                     labelText='Master:'
                     value={{ data: master, show: master_checkbox }}
                     inputChange={handleInputChange}
                     checkChange={handleCheckChange}
                     name='master'
                 />
-                <DiplomaElement
+                <InputRow
                     labelText='Doctor:'
                     value={{ data: doctor, show: doctor_checkbox }}
                     inputChange={handleInputChange}
@@ -192,13 +192,15 @@ const HeadShot = ({ imagePreviewUrl, handleImageChange }) => {
 
 /* ==================== Header =================== */
 
+//TODO
+//image
 const Header = ({ onClick }) => {
     return (
         <div id='hr0' className='ml-1 mt-2 d-flex justify-content-between'>
             <p className='Profile_main_title'>Profile Setting</p>
             <button className='btn Profile_edit_btn pl-0' onClick={onClick}>
                 {/* TODO */}
-                <img src={data.edit} className='img-fluid Profile_edit_icon' />
+                {/* <img src={data.edit} className='img-fluid Profile_edit_icon' /> */}
                 <p className='d-none d-sm-inline'>Edit</p>
             </button>
         </div>
@@ -272,7 +274,7 @@ const ExpandRow = ({
                 <img
                     className='Profile_expand_icon'
                     id={imgID}
-                    src={show_more}
+                    // src={show_more}
                     alt='show_more'
                 />
             </button>
@@ -398,7 +400,7 @@ const OccupationTable = ({
                     <th>
                         <button onClick={addOcp} id='Profile_addOccupation'>
                             <img
-                                src={add_icon}
+                                // src={add_icon}
                                 alt='add_icon'
                                 className='Profile_remove_icon'
                             />
