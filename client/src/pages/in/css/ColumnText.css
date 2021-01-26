@@ -1,4 +1,6 @@
 /* TODO:change RWD to fit phone user */
+
+/* annotation */
 .column_annotation {
     font-size: 16px;
     color: #a9a9a9;
@@ -9,6 +11,8 @@
     padding-top: 20px;
     text-align: end;
 }
+
+/*  content*/
 .column_content {
     font-family: 'Noto Sans TC', Arial, sans-serif !important;
     background-image: linear-gradient(150deg, #93d5ff, white);
@@ -22,6 +26,7 @@
     padding: 15vh 10vw;
 }
 
+/*  hashtag*/
 #hashtag_space {
     padding: 10px 80px;
 }
@@ -43,6 +48,8 @@
     transition-property: text-decoration;
     transition-duration: 0.5s;
 }
+
+/* href */
 #href_space {
     padding: 10px 80px;
 }
@@ -64,6 +71,8 @@
     transition-property: text-decoration;
     transition-duration: 0.5s;
 }
+
+/* title */
 .column_sections_bigtitle {
     font-size: 24px;
     font-weight: bold;
@@ -96,6 +105,7 @@
     line-height: 10px;
 }
 
+/* RWD */
 @media screen and (min-width: 300px) {
     #column_whole_title {
         font-size: 25px;
