@@ -1,12 +1,10 @@
 import React from 'react'
-// import AppBar from '@material-ui/core/AppBar';
-// import Toolbar from '@material-ui/core/Toolbar';
+
 import Button from '@material-ui/core/Button'
 import Logo from './Logo'
 import '../css/NavBar.css'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
 
 const NavBar = () => {
     return (
