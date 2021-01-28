@@ -15,8 +15,8 @@ yarn run dev
 * ChiangHaoWei: Policy, History, Team
 * martinooh: CSS
 * Jamesyu220: Images, Columns
-* GinGerBread_Yellow: Search, Auth
-* Jim-CTChen: Recruitment
+* GinGerBread_Yellow: Search(new function), Auth
+* Jim-CTChen: Recruitment(new function)
 ### 架構討論
 ```
 ├── client/
