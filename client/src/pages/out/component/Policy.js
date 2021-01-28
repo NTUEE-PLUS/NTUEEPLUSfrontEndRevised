@@ -1,2 +1,2 @@
 //TODO
-// use bootstrap modal to write policy
+// you can paste from old code
