@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../css/Contact.css'
 import { Link } from 'react-router-dom'
-// import image_data from '../images/public_images.json'
+import image_data from '../images/public_images.json'
 
 const Contact = () => {
     return (
@@ -13,7 +13,7 @@ const Contact = () => {
                 <div id='Contact_left_column' className='mx-3 mx-md-5 '>
                     <div id='Contact_left_image'>
                         <img
-                            // src={image_data.left_image}
+                            src={image_data.left_image}
                             alt='leftImage'
                             className='img-fluid Contact_image'
                         />
@@ -27,7 +27,7 @@ const Contact = () => {
                 <div id='Contact_right_column' className='mx-3 mx-md-5 mx-lg-6'>
                     <div id='Contact_right_image'>
                         <img
-                            // src={image_data.right_image}
+                            src={image_data.right_image}
                             alt='rightImage'
                             className='img-fluid Contact_image'
                         />

@@ -1,7 +1,9 @@
 import React from 'react'
 
 // TODO
-// image need to be import
+// image need to be imported
+import images from '../images/public_images.json'
+
 
 /* ====================== Profile Components ====================== */
 
@@ -198,7 +200,7 @@ const Header = ({ onClick }) => {
             <p className='Profile_main_title'>Profile Setting</p>
             <button className='btn Profile_edit_btn pl-0' onClick={onClick}>
                 {/* TODO */}
-                <img src={data.edit} className='img-fluid Profile_edit_icon' />
+                <img src={images.edit} className='img-fluid Profile_edit_icon' />
                 <p className='d-none d-sm-inline'>Edit</p>
             </button>
         </div>
@@ -272,7 +274,7 @@ const ExpandRow = ({
                 <img
                     className='Profile_expand_icon'
                     id={imgID}
-                    src={show_more}
+                    src={images.show_more}
                     alt='show_more'
                 />
             </button>
@@ -367,7 +369,7 @@ const Occupation = ({ work, handleChange, rmOccupation, editmode }) => {
                         onClick={rmOccupation(index)}
                     >
                         <img
-                            src={remove_icon}
+                            src={images.remove_icon}
                             className='Profile_remove_icon'
                             alt='remove_icon'
                         />
@@ -398,7 +400,7 @@ const OccupationTable = ({
                     <th>
                         <button onClick={addOcp} id='Profile_addOccupation'>
                             <img
-                                src={add_icon}
+                                src={images.add_icon}
                                 alt='add_icon'
                                 className='Profile_remove_icon'
                             />
