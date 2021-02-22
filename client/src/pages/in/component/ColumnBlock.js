@@ -67,7 +67,7 @@ class Column_block_img extends Component {
         this.getImage = getImage.bind(this)
     }
     componentWillMount() {
-        console.log(this.state.filename)
+        // console.log(this.state.filename)
         this.getImage(this.state.filename)
     }
     render() {
