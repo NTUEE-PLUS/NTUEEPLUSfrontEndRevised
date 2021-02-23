@@ -9,12 +9,12 @@ const RegisterRoutes = () => {
     return (
         <>
             <Route
-                path='/Register/pages/Register_account'
+                path='/Register/Register_account'
                 exact
                 component={RegisterDefault}
             />
             <Route
-                path='/Register/pages/Register_facebook'
+                path='/Register/Register_facebook'
                 exact
                 component={RegisterFB}
             />

@@ -5,11 +5,11 @@ import { Link, Redirect } from 'react-router-dom'
 //import myPost from "../post/axios"
 import axios from 'axios'
 
-const Login = () => {
+/* const Login = () => {
     return <></> // need to br replaced
     //TODO
     // ============= need rewrite =================
-    /* const [Login_username_input] = useState('')
+    const [Login_username_input] = useState('')
     const [Login_password_input] = useState('')
     const [Login_facebook_ID, setLogin_facebook_ID] = useState('')
     const [isLogin, setisLogin] = useState(false)
@@ -191,9 +191,9 @@ const Login = () => {
                 textButton=''
             />
         </div>
-    ) */
-}
-/* class Login extends Component {
+    )
+} */
+class Login extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -258,7 +258,7 @@ const Login = () => {
             )
     }
 
-    handleFBSubmit = (response) => {
+    handleFBSubmit(response) {
         if (response.status == 'unknown') {
             return
         }
@@ -396,6 +396,6 @@ const Login = () => {
             </div>
         )
     }
-} */
+}
 
 export default Login
