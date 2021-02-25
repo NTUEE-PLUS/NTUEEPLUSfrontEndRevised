@@ -4,6 +4,7 @@ import CareerRoutes from '../container/routes/CareerRoutes'
 import Column from '../container/Column'
 import Career from '../container/Career'
 import ColumnText from '../container/ColumnText'
+import Study from '../container/Study'
 const InRoutes = () => {
     return (
         <>
@@ -16,6 +17,7 @@ const InRoutes = () => {
                         path='/in/column/:date'
                         component={ColumnText}
                     ></Route>
+                    <Route path='/in/study' exact component={Study}></Route>
 
                     <CareerRoutes></CareerRoutes>
                 </>
