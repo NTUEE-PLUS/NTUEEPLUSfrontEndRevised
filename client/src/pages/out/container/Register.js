@@ -3,12 +3,12 @@ import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props
 import { Link, Redirect } from 'react-router-dom'
 import axios from 'axios'
 import '../css/Register.css'
-// import Facebook_image from '../images/Register_Facebook.png'
-// import Account_image from '../images/Register_Account.png'
+import Facebook_image from '../images/Register_Facebook.png'
+import Account_image from '../images/Register_Account.png'
 
 //TODO
 // ========== need to be rewritten to hook=============
-/* class Register extends Component {
+class Register extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -28,7 +28,7 @@ import '../css/Register.css'
             window.location = 'in'
         }
     }
-    handleFBSubmit = (response) => {
+    handleFBSubmit(response) {
         if (response.status == 'unknown') {
             return
         }
@@ -62,7 +62,7 @@ import '../css/Register.css'
             return (
                 <Redirect
                     to={{
-                        pathname: '/Register/pages/Register_facebook',
+                        pathname: '/Register/Register_facebook',
                         id: this.state.Login_facebook_ID,
                     }}
                 />
@@ -94,7 +94,7 @@ import '../css/Register.css'
                     </div>
 
                     <div class='col d-flex justify-content-center'>
-                        <Link to='/Register/pages/Register_account'>
+                        <Link to='/Register/Register_account'>
                             <img
                                 id='Register_imgs'
                                 src={Account_image}
@@ -109,4 +109,4 @@ import '../css/Register.css'
         )
     }
 }
-export default Register */
+export default Register

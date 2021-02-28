@@ -12,6 +12,7 @@ import Support from '../container/Support'
 import Login from '../container/Login'
 import RegisterRoutes from '../container/routes/registerRoutes'
 import Forget from '../container/Forget'
+import Register from '../container/Register'
 
 import ResetPassword from '../container/ResetPassword'
 
@@ -27,7 +28,8 @@ const OutRoutes = () => {
             <Route exact path='/History' component={History}></Route>
             <Route exact path='/Team' component={Team}></Route>
             <Route exact path='/Login' component={Login}></Route>
-            <Route path='/Register' component={RegisterRoutes}></Route>
+            <Route exact path='/Register' component={Register}></Route>
+            <RegisterRoutes />
             <Route exact path='/Forget' component={Forget}></Route>
             <Route
                 exact
