@@ -31,7 +31,27 @@ const Column = () => {
         }
         console.log(file)
     }
-
+    const column_block_2101 = {
+        filename: '2101',
+        anno: [
+            '陳君輔 余欣澄 俞建琁 何式功 巫竑儒',
+            '| 2021/03/03 星期三',
+        ],
+        title: [
+            '1986級 梁淑琴 (艾睿電子亞太區副總裁)'
+        ],
+        exp: [
+            '現任：艾睿電子亞太區副總裁'
+        ],
+        edu: [
+            '學士：台灣大學電機系 (1986)'
+        ],
+        intro: [
+            '梁淑琴學姊來自香港，大學期間曾是台大排球校隊成員，1986年從台大電機系畢業。曾在AMD擔任過sales engineer以及全中國地區的總經理，現在則在艾睿電子擔任亞太區銷售副總裁。',
+            '梁淑琴學姊提供了很多資源回饋母系。曾促成了艾睿電子和台大電機系簽署教學合作贊助計畫及人才培育計畫，加強母系與艾睿電子的緊密合作。全國首創學生自主營運管理的Maker Space，也由艾睿電子捐助了實驗室設備及相關資源。此外，由台大電機系系學會主辦軟硬體實作黑客松-MakeNTU台大電機創客松競賽，艾睿電子也運用其企業核心能力，支援競賽所需器材和設備。艾睿電子也利用其公司核心能力，營造創業環境以及技術合作等等，協助許多教授成立新創公司。'
+        ],
+        id: 'Column_Block_2101',
+    }
     const column_block_2001 = {
         filename: '2001',
         anno: [
@@ -52,7 +72,7 @@ const Column = () => {
         ],
         intro: [
             '簡韶逸教授任職於台大電子所長達16年，致力於多媒體訊號處理系統、多媒體積體電路設計、晶片系統設計方法的研究。 多年來，「媒體晶片系統實驗室」不斷研發出優異的技術。2016 年簡韶逸教授帶學生做出眼球追蹤技術的雛形時，他看好一定能應用在 AR/VR 上，於是決心創業。2018年1月時見臻科技 (Ganzin Technology) 從台灣大學spin off。見臻科技提供整合性視線追蹤解決方案  (eye tracking solution)，包括視線追蹤模組  (eye tracking module) 及對應之軟體開發平台  (SDK)，解決目前市面上眼動儀成本高、功耗高、體積大、機構複雜的問題。',
-            '見臻科技連兩年參加世界性消費電子展 (CES)，2018年獲選Taiwan Tech Star，是32家獲選的台灣新創公司之一，2019年更被路透社評選為Best of CES。',
+            '見臻科技連兩年參加世界性消費電子展 (CES)，2018年獲選Taiwan Tech Star，是32家獲選的台灣新創公司之一，2019年更被路透社評選為Best of CES。'
         ],
         id: 'Column_Block_2001',
     }
@@ -208,6 +228,7 @@ const Column = () => {
     }
     return (
         <div id='column_block_container'>
+            <ColumnBlock link='/in/column/2101' block={column_block_2101} />
             <ColumnBlock link='/in/column/2001' block={column_block_2001} />
             <ColumnBlock link='/in/column/1912' block={column_block_1912} />
             <ColumnBlock link="/in/column/1910" block = {column_block_1910} />

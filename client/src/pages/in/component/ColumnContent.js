@@ -110,23 +110,19 @@ const Column_section  = (props) => {
 const Column_title  = (props) => {
     const _title = props.title
     const _id = props.id
-    const addTitle = (i, content) => {
-        let title_container = document.getElementById(_id)
-        let newtitle = document.createElement('p')
-        newtitle.setAttribute('href', '#')
-        newtitle.setAttribute('class', 'column_title')
-        newtitle.setAttribute('id', _id + '_' + i)
-        newtitle.innerHTML = content
-        title_container.appendChild(newtitle)
-    }
-    useEffect(() => {
-        _title.forEach((title, i) => {
-            addTitle(i+1, title)
-        })
-    }, [])
     return (
         <div id={_id} class='column_whole_title'>
-            {/* {_title} */}
+            { _title.map((content, i) => (
+                <p
+                    href='#' 
+                    className='column_title'
+                    id={_id + '_' + (i+1)}
+                    key={_id + '_' + (i+1)}
+                >
+                    {content}
+                </p>
+            ))}
+            
         </div>
     )
 }
