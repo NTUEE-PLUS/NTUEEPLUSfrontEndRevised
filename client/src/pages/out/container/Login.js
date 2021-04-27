@@ -385,8 +385,9 @@ class Login extends Component {
                 </form>
 
                 <FacebookLogin
-                    appId='969130733557478'
+                    appId='571174603253755'
                     autoLoad={false}
+                    isMobile={false}
                     fields='name,email,picture'
                     callback={this.handleFBSubmit}
                     cssClass='btnFacebook container d-flex justify-content-center mt-4'
