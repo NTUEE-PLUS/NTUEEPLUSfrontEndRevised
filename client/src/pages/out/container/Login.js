@@ -385,7 +385,7 @@ class Login extends Component {
                 </form>
 
                 <FacebookLogin
-                    appId='969130733557478'
+                    appId='571174603253755'
                     autoLoad={false}
                     fields='name,email,picture'
                     callback={this.handleFBSubmit}

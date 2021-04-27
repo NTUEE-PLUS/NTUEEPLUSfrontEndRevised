@@ -77,7 +77,7 @@ class Register extends Component {
                 <div class='row container mx-auto'>
                     <div class='col d-flex justify-content-center'>
                         <FacebookLogin
-                            appId='969130733557478'
+                            appId='571174603253755'
                             autoLoad={false}
                             fields='name,email,picture'
                             callback={this.handleFBSubmit}
