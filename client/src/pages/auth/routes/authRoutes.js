@@ -5,7 +5,10 @@ const AuthRoutes = () => {
     return (
         <>
             {/* routes display in "auth" */}
-            <Route></Route>
+            {/* example 
+                <Route path='/auth/...' exact component={}></Route>
+            */}
+            
         </>
     )
 }

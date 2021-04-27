@@ -24,4 +24,11 @@ const OUT_CONFIG = {
     hasNavDropdown: true,
 }
 
-export { OUT_CONFIG, IN_CONFIG }
+const AUTH_CONFIG = {
+    navButton : [
+        { href: '/auth/manageUser', buttonText: 'User' },
+        { href: '/auth/addPost', buttonText: 'addCol' }
+    ]
+}
+
+export { OUT_CONFIG, IN_CONFIG, AUTH_CONFIG }
